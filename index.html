@@ -1,0 +1,75 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Ied 1446 H</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="nameInputContainer" class="input-overlay">
+        <label for="userName">Masukkan Nama Anda:</label>
+        <input type="text" id="userName" placeholder="Nama Anda">
+        <button id="submitName">Mulai</button>
+    </div>
+
+    <div id="interactiveArea" class="hidden">
+        <img src="./image/background baru.png" alt="Background" id="background">
+         <div class="object" id="kulkas" data-img="./image/kulkas pop up.png" data-sound="./asset/sound button.mp3" style="top: 27%; left: 16%;">
+            <img src="./image/kulkas 1.png" alt="Kulkas" style="top:70%; left:40%;"></div>
+        <div class="object" id="character" data-text="Minal Aidzin Wal Faidzin, " data-sound="./asset/sound button.mp3" style="top: 29.3%; left: 19.7%;">
+            <img src="./image/character 1.png" alt="Karakter" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="opor" data-img="./image/opor pop up.png" data-sound="./asset/sound button.mp3" style="top: 57.5%; left: 13.5%;">
+            <img src="./image/opor 1.png" alt="Opor" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="poster" data-img="./image/poster pop up.png" data-sound="./asset/sound button.mp3" style="top: 80%; left: 80%;">
+            <img src="./image/poster 1.png" alt="Poster" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="aquarium" data-img="./image/aquarium pop up.png" data-sound="./asset/sound button.mp3" style="top: 28.2%; left: 0%;">
+            <img src="./image/aquarium baru.png" alt="Aquarium" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Sampah" data-img="./image/sampah pop up.png" data-sound="./asset/sound button.mp3" style="top: 35.5%; left: 58.4%;">
+            <img src="./image/sampah 1.png" alt="Sampah" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Westafel" data-img="./image/westafel pop up.png" data-sound="./asset/sound button.mp3" style="top: 35.5%; left: 40%;">
+            <img src="./image/westafel 1.png" alt="Westafel" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Rendang" data-img="./image/rendang pop up.png" data-sound="./asset/sound button.mp3" style="top: 50%; left: 13.5%;">
+            <img src="./image/rendang 1.png" alt="Rendang" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Kupat" data-img="./image/kupat pop up.png" data-sound="./asset/sound button.mp3" style="top: 70%; left: 9%;">
+            <img src="./image/kupat 1.png" alt="Kupat" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Nastar" data-img="./image/nastar pop up.png" data-sound="./asset/sound button.mp3" style="top: 53%; left: 1%;">
+            <img src="./image/nastar 1.png" alt="Nastar" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Salju" data-img="./image/salju pop up.png" data-sound="./asset/sound button.mp3" style="top: 45%; left: 3%;">
+            <img src="./image/salju 1.png" alt="Salju" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Iphone" data-img="./image/iphone pop up.png" data-sound="./asset/sound button.mp3" style="top: 92%; left: 7%;">
+            <img src="./image/iphone 1.png" alt="Iphone" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Buzz" data-img="./image/buzz pop up.png" data-sound="./asset/sound button.mp3" style="top: 86%; left: 30%;">
+            <img src="./image/buzz 1.png" alt="Buzz" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Laptop" data-img="./image/laptop pop up.png" data-sound="./asset/sound button.mp3" style="top: 90%; left: 50%;">
+            <img src="./image/laptop 1.png" alt="Laptop" style="top:70%; left:40%;">
+        </div>
+        <div class="object" id="Pintu" data-img="./image/pintu pop up.png" data-sound="./asset/sound button.mp3" style="top: 15%; left:75%;">
+            <img src="./image/pintu 1.png" alt="Pintu" style="top:70%; left:40%;">
+        </div>
+
+    </div>
+
+    <div id="popup" class="hidden">
+        <p id="popupText"></p>
+        <img id="popupImage" src="" alt="Pop-up Image" class="hidden">
+        <button id="closePopup">Tutup</button>
+    </div>
+
+    <audio id="backgroundMusic" src="./asset/backsound.mp3" loop></audio>
+    <script src="./js/script.js"></script>
+</body>
+</html>

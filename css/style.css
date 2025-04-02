@@ -1,0 +1,87 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.input-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.object {
+    position: absolute;
+    width: 100vw; /* Ukuran berbasis viewport width agar responsif */
+    height: auto;
+    cursor: pointer;
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.object img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.object:hover {
+    filter: drop-shadow(5px 5px 10px rgb(194, 193, 255));
+    transform: scale(1.1);
+}
+
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#popupImage {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .object {
+        width: 15vw; /* Menyesuaikan ukuran untuk layar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .object {
+        width: 20vw;
+    }
+}
+
